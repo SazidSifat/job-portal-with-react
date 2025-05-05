@@ -1,0 +1,460 @@
+[
+    {
+        "id": "company-001",
+        "name": "bKash Ltd.",
+        "logo": "https://i.ibb.co.com/Y4CNscy0/BKash-Icon-Logo-wine-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.bkash.com",
+        "industry": "Fintech / Mobile Financial Services",
+        "jobs": [
+            {
+                "id": "job-001-1",
+                "title": "Software Engineer (Java/Python)",
+                "bannerImage": "https://example.com/banners/software-engineer.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 80,000 - BDT 150,000",
+                "jobType": "Full-time",
+                "description": "Develop and maintain fintech solutions for bKash's mobile payment platform.",
+                "requirements": [
+                    "Bachelor's in CSE/EEE or related field",
+                    "2+ years of experience in Java/Python",
+                    "Knowledge of REST APIs and microservices",
+                    "Understanding of financial systems is a plus"
+                ]
+            },
+            {
+                "id": "job-001-2",
+                "title": "Digital Marketing Specialist",
+                "bannerImage": "https://example.com/banners/digital-marketing.jpg",
+                "location": "Remote",
+                "salary": "BDT 50,000 - BDT 90,000",
+                "jobType": "Full-time",
+                "description": "Manage SEO, social media, and online campaigns for bKash.",
+                "requirements": [
+                    "3+ years in digital marketing",
+                    "Expertise in Google Ads & Meta Ads",
+                    "Strong analytical skills",
+                    "Experience in fintech preferred"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-002",
+        "name": "Grameenphone",
+        "logo": "https://i.ibb.co.com/6RLRXNyV/Grameenphone-Symbol-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.grameenphone.com",
+        "industry": "Telecommunications",
+        "jobs": [
+            {
+                "id": "job-002-1",
+                "title": "Network Engineer",
+                "bannerImage": "https://example.com/banners/network-engineer.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 70,000 - BDT 120,000",
+                "jobType": "Full-time",
+                "description": "Design and optimize telecom network infrastructure.",
+                "requirements": [
+                    "BSc in EEE/CSE/Telecom Engineering",
+                    "CCNA/CCNP certification preferred",
+                    "Knowledge of 4G/5G technologies"
+                ]
+            },
+            {
+                "id": "job-002-2",
+                "title": "Customer Service Manager",
+                "bannerImage": "https://example.com/banners/customer-service.jpg",
+                "location": "Chattogram, Bangladesh",
+                "salary": "BDT 60,000 - BDT 100,000",
+                "jobType": "Full-time",
+                "description": "Lead customer support operations for GP.",
+                "requirements": [
+                    "5+ years in telecom customer service",
+                    "Strong leadership skills",
+                    "Fluency in Bangla & English"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-003",
+        "name": "Daraz Bangladesh",
+        "logo": "https://i.ibb.co.com/Nd6VYwJF/daraz-logo-freelogovectors-net-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.daraz.com.bd",
+        "industry": "E-commerce",
+        "jobs": [
+            {
+                "id": "job-003-1",
+                "title": "E-commerce Operations Manager",
+                "bannerImage": "https://example.com/banners/ecommerce-manager.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 90,000 - BDT 150,000",
+                "jobType": "Full-time",
+                "description": "Oversay logistics, seller management, and platform operations.",
+                "requirements": [
+                    "MBA/BBA in Supply Chain/Management",
+                    "3+ years in e-commerce",
+                    "Data-driven decision-making skills"
+                ]
+            },
+            {
+                "id": "job-003-2",
+                "title": "UI/UX Designer",
+                "bannerImage": "https://example.com/banners/ui-ux.jpg",
+                "location": "Remote",
+                "salary": "BDT 60,000 - BDT 110,000",
+                "jobType": "Full-time",
+                "description": "Design user-friendly interfaces for Daraz app/website.",
+                "requirements": [
+                    "Portfolio showcasing UX projects",
+                    "Figma/Adobe XD proficiency",
+                    "Knowledge of mobile-first design"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-004",
+        "name": "Square Pharmaceuticals",
+        "logo": "https://i.ibb.co.com/m5z4C22s/square-pharmaceuticals-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.squarepharma.com.bd",
+        "industry": "Pharmaceutical",
+        "jobs": [
+            {
+                "id": "job-004-1",
+                "title": "Medical Representative",
+                "bannerImage": "https://example.com/banners/medical-rep.jpg",
+                "location": "Nationwide",
+                "salary": "BDT 40,000 - BDT 70,000 + Commission",
+                "jobType": "Full-time",
+                "description": "Promote Square Pharma products to healthcare professionals.",
+                "requirements": [
+                    "BPharm/MBBS/BSc in Life Sciences",
+                    "Strong communication skills",
+                    "Willingness to travel"
+                ]
+            },
+            {
+                "id": "job-004-2",
+                "title": "Quality Control Analyst",
+                "bannerImage": "https://example.com/banners/qc-analyst.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 50,000 - BDT 80,000",
+                "jobType": "Full-time",
+                "description": "Ensure compliance with pharmaceutical quality standards.",
+                "requirements": [
+                    "MSc in Chemistry/Pharmacy",
+                    "Experience in GMP/GLP labs",
+                    "Attention to detail"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-005",
+        "name": "BRAC Bank",
+        "logo": "https://i.ibb.co.com/GQYKyLhQ/brac-bank-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.bracbank.com",
+        "industry": "Banking & Financial Services",
+        "jobs": [
+            {
+                "id": "job-005-1",
+                "title": "Relationship Manager (SME Banking)",
+                "bannerImage": "https://example.com/banners/rm-sme.jpg",
+                "location": "Dhaka/Chattogram, Bangladesh",
+                "salary": "BDT 70,000 - BDT 130,000 + Incentives",
+                "jobType": "Full-time",
+                "description": "Manage SME client portfolios and drive business growth.",
+                "requirements": [
+                    "MBA/BBA in Finance/Marketing",
+                    "3+ years in banking sales",
+                    "Strong networking skills"
+                ]
+            },
+            {
+                "id": "job-005-2",
+                "title": "Cybersecurity Specialist",
+                "bannerImage": "https://example.com/banners/cybersecurity.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 100,000 - BDT 180,000",
+                "jobType": "Full-time",
+                "description": "Protect digital banking infrastructure from threats.",
+                "requirements": [
+                    "Certifications: CEH/CISSP preferred",
+                    "Experience in financial security systems",
+                    "Knowledge of PCI DSS compliance"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-006",
+        "name": "Pran-RFL Group",
+        "logo": "https://i.ibb.co.com/Df8K80Xh/pran-logo-png-seeklogo-258211-removebg-preview.png",
+        "location": "Narsingdi, Bangladesh",
+        "website": "https://www.prangroup.com",
+        "industry": "FMCG & Manufacturing",
+        "jobs": [
+            {
+                "id": "job-006-1",
+                "title": "Supply Chain Manager",
+                "bannerImage": "https://example.com/banners/supply-chain.jpg",
+                "location": "Narsingdi, Bangladesh",
+                "salary": "BDT 80,000 - BDT 140,000",
+                "jobType": "Full-time",
+                "description": "Optimize logistics for FMCG product distribution.",
+                "requirements": [
+                    "MBA in Supply Chain/Operations",
+                    "Experience in SAP/ERP systems",
+                    "Knowledge of local distribution networks"
+                ]
+            },
+            {
+                "id": "job-006-2",
+                "title": "Food Technologist",
+                "bannerImage": "https://example.com/banners/food-tech.jpg",
+                "location": "Narsingdi, Bangladesh",
+                "salary": "BDT 50,000 - BDT 90,000",
+                "jobType": "Full-time",
+                "description": "Develop new food products for PRAN.",
+                "requirements": [
+                    "BSc/MSc in Food Science",
+                    "R&D experience in FMCG",
+                    "Knowledge of food safety standards"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-007",
+        "name": "Walton Hi-Tech Industries",
+        "logo": "https://i.ibb.co.com/HDVskWLh/Challenges-Faced-By-An-SME-Founder-9-removebg-preview.png",
+        "location": "Gazipur, Bangladesh",
+        "website": "https://www.waltonbd.com",
+        "industry": "Electronics & Home Appliances",
+        "jobs": [
+            {
+                "id": "job-007-1",
+                "title": "Electronics Engineer (R&D)",
+                "bannerImage": "https://example.com/banners/electronics-engineer.jpg",
+                "location": "Gazipur, Bangladesh",
+                "salary": "BDT 60,000 - BDT 110,000",
+                "jobType": "Full-time",
+                "description": "Design and develop new electronic products for Walton.",
+                "requirements": [
+                    "BSc/MSc in Electrical/Electronics Engineering",
+                    "Experience in PCB design and prototyping",
+                    "Knowledge of IoT-based devices is a plus"
+                ]
+            },
+            {
+                "id": "job-007-2",
+                "title": "Retail Sales Manager",
+                "bannerImage": "https://example.com/banners/retail-sales.jpg",
+                "location": "Nationwide",
+                "salary": "BDT 50,000 - BDT 90,000 + Commission",
+                "jobType": "Full-time",
+                "description": "Manage sales teams across Walton showrooms.",
+                "requirements": [
+                    "5+ years in retail sales (electronics preferred)",
+                    "Leadership and CRM skills",
+                    "Willingness to travel"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-008",
+        "name": "ACI Limited",
+        "logo": "https://i.ibb.co.com/99rkk2NY/aci-group-logo-png-seeklogo-342185-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.aci-bd.com",
+        "industry": "Diversified (Pharma, Agribusiness, Consumer Goods)",
+        "jobs": [
+            {
+                "id": "job-008-1",
+                "title": "Agronomist",
+                "bannerImage": "https://example.com/banners/agronomist.jpg",
+                "location": "Bogura, Bangladesh",
+                "salary": "BDT 55,000 - BDT 95,000",
+                "jobType": "Full-time",
+                "description": "Provide technical support to farmers using ACI agro-products.",
+                "requirements": [
+                    "BSc/MSc in Agriculture",
+                    "Field experience in crop management",
+                    "Knowledge of sustainable farming practices"
+                ]
+            },
+            {
+                "id": "job-008-2",
+                "title": "Brand Manager (Consumer Division)",
+                "bannerImage": "https://example.com/banners/brand-manager.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 90,000 - BDT 150,000",
+                "jobType": "Full-time",
+                "description": "Lead marketing strategies for ACI’s consumer brands (e.g., Pure Salt, ACI Pure).",
+                "requirements": [
+                    "MBA in Marketing",
+                    "5+ years in FMCG brand management",
+                    "Creative campaign planning skills"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-009",
+        "name": "Bashundhara Group",
+        "logo": "https://i.ibb.co.com/tTPQvyz4/bashundhara-group-2-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.bashundharagroup.com",
+        "industry": "Real Estate & Manufacturing",
+        "jobs": [
+            {
+                "id": "job-009-1",
+                "title": "Civil Engineer (Construction)",
+                "bannerImage": "https://example.com/banners/civil-engineer.jpg",
+                "location": "Dhaka/Chattogram, Bangladesh",
+                "salary": "BDT 70,000 - BDT 120,000",
+                "jobType": "Full-time",
+                "description": "Supervise high-rise construction projects for Bashundhara.",
+                "requirements": [
+                    "BSc in Civil Engineering",
+                    "3+ years in real estate construction",
+                    "AutoCAD and project management skills"
+                ]
+            },
+            {
+                "id": "job-009-2",
+                "title": "Paper Mill Production Manager",
+                "bannerImage": "https://example.com/banners/paper-mill.jpg",
+                "location": "Khulna, Bangladesh",
+                "salary": "BDT 100,000 - BDT 160,000",
+                "jobType": "Full-time",
+                "description": "Oversee production at Bashundhara Paper Mills.",
+                "requirements": [
+                    "BSc in Chemical/Industrial Engineering",
+                    "Experience in pulp/paper manufacturing",
+                    "Knowledge of ISO quality standards"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-010",
+        "name": "SSL Wireless",
+        "logo": "https://i.ibb.co.com/tw0Yvkxb/ssl-wireless-logo-png-seeklogo-351603-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.sslwireless.com",
+        "industry": "IT & Fintech",
+        "jobs": [
+            {
+                "id": "job-010-1",
+                "title": "Payment Gateway Developer",
+                "bannerImage": "https://example.com/banners/payment-gateway.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 100,000 - BDT 180,000",
+                "jobType": "Full-time",
+                "description": "Develop and maintain SSLCOMMERZ payment solutions.",
+                "requirements": [
+                    "Expertise in PHP/Laravel or Node.js",
+                    "Knowledge of PCI-DSS compliance",
+                    "Experience with APIs (REST/SOAP)"
+                ]
+            },
+            {
+                "id": "job-010-2",
+                "title": "Business Development Executive (Fintech)",
+                "bannerImage": "https://example.com/banners/bd-fintech.jpg",
+                "location": "Dhaka/Chattogram, Bangladesh",
+                "salary": "BDT 60,000 - BDT 100,000 + Commission",
+                "jobType": "Full-time",
+                "description": "Onboard merchants for SSLCOMMERZ payment services.",
+                "requirements": [
+                    "2+ years in fintech sales",
+                    "Strong negotiation skills",
+                    "Understanding of digital payments"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-011",
+        "name": "Doreen Power Generations",
+        "logo": "https://i.ibb.co.com/R4gCP5yc/15027856-1244436618965130-8685242298775454689-n-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.doreenpower.com",
+        "industry": "Energy & Power",
+        "jobs": [
+            {
+                "id": "job-011-1",
+                "title": "Electrical Engineer (Power Plant)",
+                "bannerImage": "https://example.com/banners/power-plant.jpg",
+                "location": "Sylhet, Bangladesh",
+                "salary": "BDT 80,000 - BDT 130,000",
+                "jobType": "Full-time",
+                "description": "Maintain and troubleshoot power generation equipment.",
+                "requirements": [
+                    "BSc in Electrical Engineering",
+                    "Experience in gas-based power plants",
+                    "Knowledge of SCADA systems"
+                ]
+            },
+            {
+                "id": "job-011-2",
+                "title": "Renewable Energy Specialist",
+                "bannerImage": "https://example.com/banners/renewable-energy.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 90,000 - BDT 140,000",
+                "jobType": "Full-time",
+                "description": "Research and implement solar/hybrid energy projects.",
+                "requirements": [
+                    "MSc in Renewable Energy/Environmental Science",
+                    "Project management experience",
+                    "Knowledge of solar PV systems"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "company-012",
+        "name": "Ha-Meem Group",
+        "logo": "https://i.ibb.co.com/7tbZvBPQ/channels4-profile-removebg-preview.png",
+        "location": "Dhaka, Bangladesh",
+        "website": "https://www.hameemgroup.net",
+        "industry": "Textile & Garments",
+        "jobs": [
+            {
+                "id": "job-012-1",
+                "title": "Textile Production Manager",
+                "bannerImage": "https://example.com/banners/textile-production.jpg",
+                "location": "Gazipur, Bangladesh",
+                "salary": "BDT 70,000 - BDT 120,000",
+                "jobType": "Full-time",
+                "description": "Oversee denim/fabric manufacturing processes.",
+                "requirements": [
+                    "BSc in Textile Engineering",
+                    "5+ years in large-scale textile production",
+                    "Knowledge of lean manufacturing"
+                ]
+            },
+            {
+                "id": "job-012-2",
+                "title": "Merchandiser (Apparel)",
+                "bannerImage": "https://example.com/banners/merchandiser.jpg",
+                "location": "Dhaka, Bangladesh",
+                "salary": "BDT 50,000 - BDT 90,000",
+                "jobType": "Full-time",
+                "description": "Coordinate with international buyers for RMG orders.",
+                "requirements": [
+                    "MBA/BBA in Fashion Merchandising",
+                    "Fluency in English",
+                    "Experience with H&M/Zara buyers is a plus"
+                ]
+            }
+        ]
+    }
+]

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router';
 import { HiMenuAlt3 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
+import { TbLogin2 } from "react-icons/tb";
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
@@ -10,12 +11,10 @@ const Navbar = () => {
         setToggle(!toggle)
     }
 
-
-
     return (
         <div className='container mx-auto py-4  flex items-center justify-between px-2 md:px-0  relative'>
             <div>
-                <h1 className='text-3xl  font-bold'>JOB TRACK<span className='text-accent'>.</span></h1>
+                <Link to='/' className='text-3xl  font-bold'>JOB TRACK<span className='text-accent'>.</span></Link>
             </div>
 
             <div className='flex items-center justify-center gap-10'>
@@ -28,7 +27,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex gap-4 items-center'>
                     <div className='space-x-4'>
-                        <Link className='btn '>Login</Link>
+                        <Link className='btn '> Login <TbLogin2 size={20} /></Link>
                         <Link className='btn btn-primary'>Register</Link>
                     </div>
                     <div onClick={handleToggle} className='lg:hidden cursor-pointer'>

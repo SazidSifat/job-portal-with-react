@@ -10,11 +10,11 @@ const HomeLayout = () => {
                 <Navbar />
 
             </header>
-            <main className='h-[150vh] container mx-auto'>
+            <main className=''>
                 <Outlet />
 
             </main>
-            <footer>
+            <footer className='bg-base-200'>
                 <Footer />
             </footer>
         </>
