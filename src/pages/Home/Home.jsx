@@ -12,7 +12,7 @@ const Home = () => {
             <section className='bg-[#f1f5f8]'>
                 <HowItWorks/>
             </section>
-            <section>
+            <section className='mt-6'>
                 <TopCompanies/>
             </section>
         </div>
