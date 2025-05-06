@@ -9,35 +9,33 @@ const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true)
 
     // Google SignUp
-    const signUpWithGoogle = async (provider) => {
-        signInWithPopup(auth, provider).finally(() => {
-
-        })
+    const signUpWithGoogle = (provider) => {
+        setLoading(true)
+        return signInWithPopup(auth, provider)
 
     }
 
 
     // login 
-    const logInWithPass = async (email,password)=>{
-        signInWithEmailAndPassword(auth,email,password).finally(()=>{
+    const logInWithPass = (email, password) => {
+        setLoading(true)
+        return signInWithEmailAndPassword(auth, email, password).finally(()=>{
             setLoading(false)
         })
+
     }
 
     //Email SignUp
-    const signUpWithEmailPass = async (email, password) => {
-        createUserWithEmailAndPassword(auth, email, password).finally(() => {
-
-        })
+    const signUpWithEmailPass = (email, password) => {
+        setLoading(true)
+        return createUserWithEmailAndPassword(auth, email, password)
 
     }
 
     // SignOut
-    const sign = async () => {
-
-        signOut(auth).finally(() => {
-
-        })
+    const sign = () => {
+        setLoading(true)
+        signOut(auth)
 
     }
 

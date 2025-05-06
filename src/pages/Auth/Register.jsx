@@ -1,53 +1,54 @@
-import React, { use, useContext, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../../context/AuthContext/AuthContext';
-import { useNavigate } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Register = () => {
-    const [message, setMessage] = useState(null)
     const [errMessage, setErrMessage] = useState(null)
 
     const navigate = useNavigate()
     const provider = new GoogleAuthProvider();
-
-    const { signUpWithGoogle } = useContext(AuthContext)
-
-
-    const { loading, signUpWithEmailPass } = use(AuthContext)
+    const { loading, signUpWithEmailPass, signUpWithGoogle } = useContext(AuthContext)
 
 
     const handleForm = (event) => {
         event.preventDefault();
         setErrMessage(null)
-        setMessage(null)
 
         const name = event.target.name.value
         const image = event.target.image.value
         const email = event.target.email.value
         const password = event.target.password.value
 
+        console.log(password);
         if (name && email && image && password) {
             if (password.length < 8) {
                 setErrMessage("Password Must 8 Charecter long")
             } else {
-                if (/(?=.*[a-z])/.test(password)) {
-                    if (/(?=.*[A-Z])/.test(password)) {
-                        if (/(?=.*\d)/.test(password)) {
-                            if (/(?=.*[@#$%^&*!?.])/.test(password)) {
-                                signUpWithEmailPass(email, password).then(() => {
-                                    setMessage("Account Created Successfully! Redirectd...")
-                                    setTimeout(() => {
-                                        navigate('/')
-                                    }, 2000);
+                if (!/(?=.*[a-z])/.test(password)) {
+                    setErrMessage("Must have 1 lowercase letter");
+                }
+                else if (!/(?=.*[A-Z])/.test(password)) {
+                    setErrMessage("Must have 1 uppercase letter");
+                }
+                else if (!/(?=.*\d)/.test(password)) {
+                    setErrMessage("Must have 1 number");
+                }
+                else if (!/(?=.*[@#$%^&*!?.])/.test(password)) {
+                    setErrMessage("Must have 1 special character");
+                } else {
+                    signUpWithEmailPass(email, password).then(() => {
+                        navigate('/')
+                    }).catch((err) => {
+                        if (err.code === "auth/email-already-in-use") {
+                            setErrMessage("Email Already Exist")
+                        } else {
+                            setErrMessage("Failed to create account")
+                        }
+                    })
+                }
 
-                                }).catch(() => {
-                                    setErrMessage("Failed to create account")
-                                })
-                            } else { setErrMessage("Must have 1 special character"); }
-                        } else { setErrMessage("Must have 1 number"); }
-                    } else { setErrMessage("Must have 1 uppercase letter"); }
-                } else { setErrMessage("Must have 1 lowercase letter"); }
             }
         } else setErrMessage("All fields are required!");
     }
@@ -61,10 +62,10 @@ const Register = () => {
     }
 
     return (
-        <div className='bg-[#f1f5f8] h-[85  vh] flex items-center justify-center  '>
+        <div className='bg-[#f1f5f8] p-6 lg:py-16 flex items-center justify-center  '>
             <div className='bg-white px-10 py-14 lg:px-15 lg:py-15 w-10/12 lg:w-4/12 rounded-lg space-y-6'>
                 <h1 className='text-red-400 font-bold text-xl text-center'>{errMessage}</h1>
-                <h1 className='text-green-400 font-bold text-xl text-center'>{message}</h1>
+                {/* <h1 className='text-green-400 font-bold text-xl text-center'>{message}</h1> */}
                 <h1 className='text-center text-3xl font-bold'>Create an account! </h1>
                 <form onSubmit={handleForm} action="" className='flex flex-col gap-6'>
                     <input type="text" placeholder='Name ' name='name' className='w-full rounded-lg p-4 border border-[#eaeff3]' />
@@ -77,6 +78,7 @@ const Register = () => {
                 <div>
                     <button onClick={handleGoogle} type="submit" value='Login' className=' text-white rounded-lg w-full p-4 border  cursor-pointer hover:bg-red-400 hover:opacity-90 flex items-center justify-center gap-4 bg-red-400 text-lg' > <FaGoogle size={15} /><span>Google</span></button>
                 </div>
+                <h1 className='text-lg text-center text-secondary font-semibold'>Already Have an Account. <Link to='/auth/login' className='text-primary'>Login</Link></h1>
             </div>
         </div>
     );
