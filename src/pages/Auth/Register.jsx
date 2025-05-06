@@ -1,13 +1,17 @@
-import React, { use, useState } from 'react';
+import React, { use, useContext, useState } from 'react';
 import { FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../../context/AuthContext/AuthContext';
 import { useNavigate } from 'react-router';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const Register = () => {
     const [message, setMessage] = useState(null)
     const [errMessage, setErrMessage] = useState(null)
 
     const navigate = useNavigate()
+    const provider = new GoogleAuthProvider();
+
+    const { signUpWithGoogle } = useContext(AuthContext)
 
 
     const { loading, signUpWithEmailPass } = use(AuthContext)
@@ -16,8 +20,8 @@ const Register = () => {
     const handleForm = (event) => {
         event.preventDefault();
         setErrMessage(null)
+        setMessage(null)
 
-        console.log("hj");
         const name = event.target.name.value
         const image = event.target.image.value
         const email = event.target.email.value
@@ -48,9 +52,17 @@ const Register = () => {
         } else setErrMessage("All fields are required!");
     }
 
+    const handleGoogle = () => {
+        signUpWithGoogle(provider).then(() => {
+            console.log("create");
+        }
+        )
+
+    }
+
     return (
-        <div className='bg-[#f1f5f8] h-[80vh] flex items-center justify-center  '>
-            <div className='bg-white px-10 py-14 lg:px-20 lg:py-20 w-10/12 lg:w-4/12 rounded-lg space-y-6'>
+        <div className='bg-[#f1f5f8] h-[85  vh] flex items-center justify-center  '>
+            <div className='bg-white px-10 py-14 lg:px-15 lg:py-15 w-10/12 lg:w-4/12 rounded-lg space-y-6'>
                 <h1 className='text-red-400 font-bold text-xl text-center'>{errMessage}</h1>
                 <h1 className='text-green-400 font-bold text-xl text-center'>{message}</h1>
                 <h1 className='text-center text-3xl font-bold'>Create an account! </h1>
@@ -63,7 +75,7 @@ const Register = () => {
                 </form>
                 <hr className='text-gray-300' />
                 <div>
-                    <button type="submit" value='Login' className=' text-white rounded-lg w-full p-4 border  cursor-pointer hover:bg-red-400 hover:opacity-90 flex items-center justify-center gap-4 bg-red-400 text-lg' > <FaGoogle size={15} /><span>Google</span></button>
+                    <button onClick={handleGoogle} type="submit" value='Login' className=' text-white rounded-lg w-full p-4 border  cursor-pointer hover:bg-red-400 hover:opacity-90 flex items-center justify-center gap-4 bg-red-400 text-lg' > <FaGoogle size={15} /><span>Google</span></button>
                 </div>
             </div>
         </div>
