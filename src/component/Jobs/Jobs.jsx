@@ -18,7 +18,7 @@ const Jobs = ({ job, singleData }) => {
                 <div className='md:space-y-3 flex-1'>
                     <div className='flex  flex-col items-start gap-2'>
                         <span className='py-1 font-semibold  px-3 text-accent bg-base-200 rounded-sm'>{jobType}</span>
-                        <h1 className='text-xl lg:text-2xl font-semibold text-secondary'>{title}</h1>
+                        <h1 className='text-xl lg:text-2xl font-semibold text-secondary'>{title}</h1>   
                     </div>
                     <h1 className='md:text-lg flex items-center  gap-1'><CiLocationOn />{location}</h1>
                 </div>

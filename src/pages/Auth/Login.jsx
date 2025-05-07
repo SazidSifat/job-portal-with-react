@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../../context/AuthContext/AuthContext';
-import { Link, useNavigate } from 'react-router';
+import { Link, useLocation, useNavigate } from 'react-router';
 import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
@@ -12,6 +12,9 @@ const Login = () => {
 
     const provider = new GoogleAuthProvider();
 
+
+    const location = useLocation()
+    console.log(location);
     const [errMessage, setErrMessage] = useState(null)
     const navigate = useNavigate()
     const emailRef = useRef("")
@@ -26,7 +29,8 @@ const Login = () => {
 
         if (email && password) {
             logInWithPass(email, password).then(() => {
-                navigate('/')
+                location.state ? navigate(location.state) : navigate('/')
+
             }).catch((err) => {
                 console.log(err.code);
 
@@ -48,7 +52,7 @@ const Login = () => {
     }
     const handleGoogle = () => {
         signUpWithGoogle(provider).then(() => {
-            navigate('/')
+            location.state ? navigate(`${location.state}`) : navigate('/')
         }
         ).catch(() => { setLoading(false) })
     }

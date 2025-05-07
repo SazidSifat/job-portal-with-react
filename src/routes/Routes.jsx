@@ -9,6 +9,7 @@ import Register from "../pages/Auth/Register";
 import Forget from "../pages/Auth/Forget";
 import CompaniesDetails from "../component/CompaniesDetails/CompaniesDetails";
 import Profile from "../pages/Profile/Profile";
+import PrivateRoute from "../component/PrivateRoute/PrivateRoute";
 
 
 
@@ -40,8 +41,8 @@ export const router = createBrowserRouter([
 
             },
             {
-                path:'/profile',
-                Component:Profile
+                path: '/profile',
+                element: <PrivateRoute><Profile /></PrivateRoute>
 
             },
             {
@@ -50,7 +51,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: '/company/:id',
-                element: <CompaniesDetails />,
+                element: <PrivateRoute><CompaniesDetails /></PrivateRoute>,
                 loader: () => fetch("/companies.json"),
                 errorElement: Error
             }
