@@ -5,14 +5,14 @@
         "logo": "https://i.ibb.co.com/Y4CNscy0/BKash-Icon-Logo-wine-removebg-preview.png",
         "location": "Dhaka, Bangladesh",
         "website": "https://www.bkash.com",
-        "industry": "Fintech / Mobile Financial Services",
+        "industry": "Fintech ",
         "jobs": [
             {
                 "id": "job-001-1",
                 "title": "Software Engineer (Java/Python)",
                 "bannerImage": "https://example.com/banners/software-engineer.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 80,000 - BDT 150,000",
+                "salary": "80,000 - 150,000",
                 "jobType": "Full-time",
                 "description": "Develop and maintain fintech solutions for bKash's mobile payment platform.",
                 "requirements": [
@@ -27,7 +27,7 @@
                 "title": "Digital Marketing Specialist",
                 "bannerImage": "https://example.com/banners/digital-marketing.jpg",
                 "location": "Remote",
-                "salary": "BDT 50,000 - BDT 90,000",
+                "salary": "50,000 -90,000",
                 "jobType": "Full-time",
                 "description": "Manage SEO, social media, and online campaigns for bKash.",
                 "requirements": [
@@ -52,7 +52,7 @@
                 "title": "Network Engineer",
                 "bannerImage": "https://example.com/banners/network-engineer.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 70,000 - BDT 120,000",
+                "salary": "70,000 - 120,000",
                 "jobType": "Full-time",
                 "description": "Design and optimize telecom network infrastructure.",
                 "requirements": [
@@ -66,7 +66,7 @@
                 "title": "Customer Service Manager",
                 "bannerImage": "https://example.com/banners/customer-service.jpg",
                 "location": "Chattogram, Bangladesh",
-                "salary": "BDT 60,000 - BDT 100,000",
+                "salary": " 60,000 -  100,000",
                 "jobType": "Full-time",
                 "description": "Lead customer support operations for GP.",
                 "requirements": [
@@ -90,7 +90,7 @@
                 "title": "E-commerce Operations Manager",
                 "bannerImage": "https://example.com/banners/ecommerce-manager.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 90,000 - BDT 150,000",
+                "salary": " 90,000 -  150,000",
                 "jobType": "Full-time",
                 "description": "Oversay logistics, seller management, and platform operations.",
                 "requirements": [
@@ -104,7 +104,7 @@
                 "title": "UI/UX Designer",
                 "bannerImage": "https://example.com/banners/ui-ux.jpg",
                 "location": "Remote",
-                "salary": "BDT 60,000 - BDT 110,000",
+                "salary": " 60,000 -  110,000",
                 "jobType": "Full-time",
                 "description": "Design user-friendly interfaces for Daraz app/website.",
                 "requirements": [
@@ -128,7 +128,7 @@
                 "title": "Medical Representative",
                 "bannerImage": "https://example.com/banners/medical-rep.jpg",
                 "location": "Nationwide",
-                "salary": "BDT 40,000 - BDT 70,000 + Commission",
+                "salary": " 40,000 -  70,000 + Commission",
                 "jobType": "Full-time",
                 "description": "Promote Square Pharma products to healthcare professionals.",
                 "requirements": [
@@ -142,7 +142,7 @@
                 "title": "Quality Control Analyst",
                 "bannerImage": "https://example.com/banners/qc-analyst.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 50,000 - BDT 80,000",
+                "salary": " 50,000 -  80,000",
                 "jobType": "Full-time",
                 "description": "Ensure compliance with pharmaceutical quality standards.",
                 "requirements": [
@@ -166,7 +166,7 @@
                 "title": "Relationship Manager (SME Banking)",
                 "bannerImage": "https://example.com/banners/rm-sme.jpg",
                 "location": "Dhaka/Chattogram, Bangladesh",
-                "salary": "BDT 70,000 - BDT 130,000 + Incentives",
+                "salary": " 70,000 -  130,000 + Incentives",
                 "jobType": "Full-time",
                 "description": "Manage SME client portfolios and drive business growth.",
                 "requirements": [
@@ -180,7 +180,7 @@
                 "title": "Cybersecurity Specialist",
                 "bannerImage": "https://example.com/banners/cybersecurity.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 100,000 - BDT 180,000",
+                "salary": " 100,000 -  180,000",
                 "jobType": "Full-time",
                 "description": "Protect digital banking infrastructure from threats.",
                 "requirements": [
@@ -204,7 +204,7 @@
                 "title": "Supply Chain Manager",
                 "bannerImage": "https://example.com/banners/supply-chain.jpg",
                 "location": "Narsingdi, Bangladesh",
-                "salary": "BDT 80,000 - BDT 140,000",
+                "salary": " 80,000 -  140,000",
                 "jobType": "Full-time",
                 "description": "Optimize logistics for FMCG product distribution.",
                 "requirements": [
@@ -218,7 +218,7 @@
                 "title": "Food Technologist",
                 "bannerImage": "https://example.com/banners/food-tech.jpg",
                 "location": "Narsingdi, Bangladesh",
-                "salary": "BDT 50,000 - BDT 90,000",
+                "salary": " 50,000 -  90,000",
                 "jobType": "Full-time",
                 "description": "Develop new food products for PRAN.",
                 "requirements": [
@@ -242,7 +242,7 @@
                 "title": "Electronics Engineer (R&D)",
                 "bannerImage": "https://example.com/banners/electronics-engineer.jpg",
                 "location": "Gazipur, Bangladesh",
-                "salary": "BDT 60,000 - BDT 110,000",
+                "salary": " 60,000 -  110,000",
                 "jobType": "Full-time",
                 "description": "Design and develop new electronic products for Walton.",
                 "requirements": [
@@ -256,7 +256,7 @@
                 "title": "Retail Sales Manager",
                 "bannerImage": "https://example.com/banners/retail-sales.jpg",
                 "location": "Nationwide",
-                "salary": "BDT 50,000 - BDT 90,000 + Commission",
+                "salary": " 50,000 -  90,000 + Commission",
                 "jobType": "Full-time",
                 "description": "Manage sales teams across Walton showrooms.",
                 "requirements": [
@@ -280,7 +280,7 @@
                 "title": "Agronomist",
                 "bannerImage": "https://example.com/banners/agronomist.jpg",
                 "location": "Bogura, Bangladesh",
-                "salary": "BDT 55,000 - BDT 95,000",
+                "salary": " 55,000 -  95,000",
                 "jobType": "Full-time",
                 "description": "Provide technical support to farmers using ACI agro-products.",
                 "requirements": [
@@ -294,7 +294,7 @@
                 "title": "Brand Manager (Consumer Division)",
                 "bannerImage": "https://example.com/banners/brand-manager.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 90,000 - BDT 150,000",
+                "salary": " 90,000 -  150,000",
                 "jobType": "Full-time",
                 "description": "Lead marketing strategies for ACI’s consumer brands (e.g., Pure Salt, ACI Pure).",
                 "requirements": [
@@ -318,7 +318,7 @@
                 "title": "Civil Engineer (Construction)",
                 "bannerImage": "https://example.com/banners/civil-engineer.jpg",
                 "location": "Dhaka/Chattogram, Bangladesh",
-                "salary": "BDT 70,000 - BDT 120,000",
+                "salary": " 70,000 -  120,000",
                 "jobType": "Full-time",
                 "description": "Supervise high-rise construction projects for Bashundhara.",
                 "requirements": [
@@ -332,7 +332,7 @@
                 "title": "Paper Mill Production Manager",
                 "bannerImage": "https://example.com/banners/paper-mill.jpg",
                 "location": "Khulna, Bangladesh",
-                "salary": "BDT 100,000 - BDT 160,000",
+                "salary": " 100,000 -  160,000",
                 "jobType": "Full-time",
                 "description": "Oversee production at Bashundhara Paper Mills.",
                 "requirements": [
@@ -356,7 +356,7 @@
                 "title": "Payment Gateway Developer",
                 "bannerImage": "https://example.com/banners/payment-gateway.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 100,000 - BDT 180,000",
+                "salary": " 100,000 -  180,000",
                 "jobType": "Full-time",
                 "description": "Develop and maintain SSLCOMMERZ payment solutions.",
                 "requirements": [
@@ -370,7 +370,7 @@
                 "title": "Business Development Executive (Fintech)",
                 "bannerImage": "https://example.com/banners/bd-fintech.jpg",
                 "location": "Dhaka/Chattogram, Bangladesh",
-                "salary": "BDT 60,000 - BDT 100,000 + Commission",
+                "salary": " 60,000 -  100,000 + Commission",
                 "jobType": "Full-time",
                 "description": "Onboard merchants for SSLCOMMERZ payment services.",
                 "requirements": [
@@ -394,7 +394,7 @@
                 "title": "Electrical Engineer (Power Plant)",
                 "bannerImage": "https://example.com/banners/power-plant.jpg",
                 "location": "Sylhet, Bangladesh",
-                "salary": "BDT 80,000 - BDT 130,000",
+                "salary": " 80,000 -  130,000",
                 "jobType": "Full-time",
                 "description": "Maintain and troubleshoot power generation equipment.",
                 "requirements": [
@@ -408,7 +408,7 @@
                 "title": "Renewable Energy Specialist",
                 "bannerImage": "https://example.com/banners/renewable-energy.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 90,000 - BDT 140,000",
+                "salary": " 90,000 -  140,000",
                 "jobType": "Full-time",
                 "description": "Research and implement solar/hybrid energy projects.",
                 "requirements": [
@@ -432,7 +432,7 @@
                 "title": "Textile Production Manager",
                 "bannerImage": "https://example.com/banners/textile-production.jpg",
                 "location": "Gazipur, Bangladesh",
-                "salary": "BDT 70,000 - BDT 120,000",
+                "salary": " 70,000 -  120,000",
                 "jobType": "Full-time",
                 "description": "Oversee denim/fabric manufacturing processes.",
                 "requirements": [
@@ -446,7 +446,7 @@
                 "title": "Merchandiser (Apparel)",
                 "bannerImage": "https://example.com/banners/merchandiser.jpg",
                 "location": "Dhaka, Bangladesh",
-                "salary": "BDT 50,000 - BDT 90,000",
+                "salary": " 50,000 -  90,000",
                 "jobType": "Full-time",
                 "description": "Coordinate with international buyers for RMG orders.",
                 "requirements": [

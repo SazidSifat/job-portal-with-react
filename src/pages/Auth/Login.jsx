@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from 'react';
 import { FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../../context/AuthContext/AuthContext';
 import { Link, useNavigate } from 'react-router';
+import { GoogleAuthProvider } from 'firebase/auth';
 
 const Login = () => {
 
@@ -9,12 +10,14 @@ const Login = () => {
         document.title = "Login Now"
     }, [])
 
+    const provider = new GoogleAuthProvider();
+
     const [errMessage, setErrMessage] = useState(null)
     const navigate = useNavigate()
     const emailRef = useRef("")
 
 
-    const { loading, setLoading, logInWithPass } = useContext(AuthContext)
+    const { loading, setLoading, logInWithPass, signUpWithGoogle } = useContext(AuthContext)
 
     const handleForm = (e) => {
         e.preventDefault()
@@ -43,12 +46,18 @@ const Login = () => {
         console.log(emailVal);
         navigate("/auth/forget", { state: emailVal })
     }
+    const handleGoogle = () => {
+        signUpWithGoogle(provider).then(() => {
+            navigate('/')
+        }
+        ).catch(() => { setLoading(false) })
+    }
 
 
     return (
         <div className='bg-[#f1f5f8] h-[80vh] py-6 lg:py-16 flex items-center justify-center  '>
             <div className='bg-white px-10 py-14 lg:px-20 lg:py-24 w-10/12 lg:w-4/12 rounded-lg space-y-6'>
-                <h1 className='text-red-400 font-bold text-xl text-center'>{errMessage}</h1>
+                <p className='text-red-400 font-bold text-xl text-center'>{errMessage}</p>
 
                 <h1 className='text-center text-3xl font-bold'>Login Now!</h1>
                 <form onSubmit={handleForm} action="" className='flex flex-col gap-6'>
@@ -61,7 +70,7 @@ const Login = () => {
                 </form>
                 <hr className='text-gray-300' />
                 <div>
-                    <button type="submit" value='Login' className=' text-white rounded-lg w-full p-4 border  cursor-pointer hover:bg-red-400 hover:opacity-90 flex items-center justify-center gap-4 bg-red-400 text-lg' > <FaGoogle size={15} /><span>Google</span></button>
+                    <button onClick={handleGoogle} type="submit" value='Login' className=' text-white rounded-lg w-full p-4 border  cursor-pointer hover:bg-red-400 hover:opacity-90 flex items-center justify-center gap-4 bg-red-400 text-lg' > {loading ? <span className="loading loading-bars loading-xm"></span> : <><FaGoogle size={15} /><span>Google</span></>} </button>
                 </div>
                 <h1 className='text-lg text-center text-secondary font-semibold'>Don't have account. <Link to='/auth/register' className='text-primary hover:underline'>Register</Link></h1>
             </div>

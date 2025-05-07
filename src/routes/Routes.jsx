@@ -7,6 +7,8 @@ import Contact from "../pages/Contact/Contact";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
 import Forget from "../pages/Auth/Forget";
+import CompaniesDetails from "../component/CompaniesDetails/CompaniesDetails";
+import Profile from "../pages/Profile/Profile";
 
 
 
@@ -29,21 +31,27 @@ export const router = createBrowserRouter([
                 Component: Contact
             },
             {
-                path:'auth/login',
+                path: 'auth/login',
                 Component: Login
             },
             {
-                path:'auth/register',
+                path: 'auth/register',
                 Component: Register
 
             },
             {
-                path:'/auth/forget',
+                path:'/profile',
+                Component:Profile
+
+            },
+            {
+                path: '/auth/forget',
                 Component: Forget
             },
             {
                 path: '/company/:id',
-                element: <h1>Company details</h1>,
+                element: <CompaniesDetails />,
+                loader: () => fetch("/companies.json"),
                 errorElement: Error
             }
         ]

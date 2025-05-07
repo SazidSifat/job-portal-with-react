@@ -37,10 +37,15 @@ const Navbar = () => {
                         <NavLink to='/contact' className='hover:text-accent font-semibold'>Contact</NavLink>
                     </ul>
                 </div>
+
+
                 <div className='flex gap-1 md:gap-4 items-center'>
                     <div className=' space-x-1 md:space-x-4'>
                         {
-                            user ? <Link onClick={handlesignOut} to='/' className='btn btn-primary'>Logout</Link> : <><Link to='/auth/login' className='btn '> Login <TbLogin2 size={20} /></Link>
+                            user ? <div className='flex items-center gap-3'>
+                                <Link to='/profile'><img  src={user.photoURL} alt="" className='w-12 h-12 rounded-full  border-2 border-primary ' /></Link>
+                                <Link onClick={handlesignOut} to='/' className='btn btn-primary'>Logout</Link>
+                            </div> : <><Link to='/auth/login' className='btn '> Login <TbLogin2 size={20} /></Link>
                                 <Link to='/auth/register' className='btn btn-primary'>Register</Link></>
                         }
                     </div>

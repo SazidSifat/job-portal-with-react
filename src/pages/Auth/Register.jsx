@@ -19,7 +19,7 @@ const Register = () => {
 
     const navigate = useNavigate()
     const provider = new GoogleAuthProvider();
-    const { loading, setLoading, signUpWithEmailPass, signUpWithGoogle } = useContext(AuthContext)
+    const { loading, setLoading, signUpWithEmailPass, signUpWithGoogle, updateUser } = useContext(AuthContext)
 
 
     const handleForm = (event) => {
@@ -48,11 +48,12 @@ const Register = () => {
                     setErrMessage("Must have 1 special character");
                 } else {
                     signUpWithEmailPass(email, password).then(() => {
-                        navigate('/')
+                        updateUser({ displayName: name, photoURL: image }).then(() => {
+                            navigate('/')
+                        })
                     }).catch((err) => {
                         if (err.code === "auth/email-already-in-use") {
                             setErrMessage("Email Already Exist")
-
                         } else {
                             setErrMessage("Failed to create account")
                         }
@@ -74,9 +75,8 @@ const Register = () => {
 
     return (
         <div className='bg-[#f1f5f8] p-6 lg:py-16 flex items-center justify-center  '>
-            <div className='bg-white px-10 py-14 lg:px-15 lg:py-15 w-10/12 lg:w-4/12 rounded-lg space-y-6'>
-                <h1 className='text-red-400 font-bold text-lg text-center'>{errMessage}</h1>
-                {/* <h1 className='text-green-400 font-bold text-xl text-center'>{message}</h1> */}
+            <div className='bg-white px-6 py-14 lg:px-15 lg:py-15 w-11/12 lg:w-4/12 rounded-lg space-y-6'>
+                <p className='text-red-400 font-bold text-lg text-center'>{errMessage}</p>
                 <h1 className='text-center text-3xl font-bold'>Create an account! </h1>
                 <form onSubmit={handleForm} action="" className='flex flex-col gap-6'>
                     <input type="text" placeholder='Name ' name='name' className='w-full rounded-lg p-4 border border-[#eaeff3]' />
