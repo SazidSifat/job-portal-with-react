@@ -1,15 +1,20 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useRef, useState } from 'react';
 import { FaGoogle } from "react-icons/fa";
 import { AuthContext } from '../../context/AuthContext/AuthContext';
 import { Link, useNavigate } from 'react-router';
 
 const Login = () => {
+
+    useEffect(() => {
+        document.title = "Login Now"
+    }, [])
+
     const [errMessage, setErrMessage] = useState(null)
     const navigate = useNavigate()
+    const emailRef = useRef("")
 
-    const { loading, logInWithPass } = useContext(AuthContext)
 
-
+    const { loading, setLoading, logInWithPass } = useContext(AuthContext)
 
     const handleForm = (e) => {
         e.preventDefault()
@@ -17,13 +22,26 @@ const Login = () => {
         const password = e.target.password.value
 
         if (email && password) {
-            logInWithPass(email, password).then((res) => {
+            logInWithPass(email, password).then(() => {
                 navigate('/')
             }).catch((err) => {
-                setErrMessage("Failed to Login")
+                console.log(err.code);
+
+                if (err.code === "auth/invalid-credential") {
+                    setErrMessage("Invalid Credential");
+                    setLoading(false)
+
+                }
 
             })
         } else setErrMessage("All fields are required!");
+    }
+
+
+    const handleReset = () => {
+        const emailVal = emailRef.current.value
+        console.log(emailVal);
+        navigate("/auth/forget", { state: emailVal })
     }
 
 
@@ -34,15 +52,18 @@ const Login = () => {
 
                 <h1 className='text-center text-3xl font-bold'>Login Now!</h1>
                 <form onSubmit={handleForm} action="" className='flex flex-col gap-6'>
-                    <input type="email" name='email' placeholder='Email ' className='w-full rounded-lg p-4 border border-[#eaeff3]' />
+                    <input type="email" ref={emailRef} name='email' placeholder='Email ' className='w-full rounded-lg p-4 border border-[#eaeff3]' />
                     <input type="password" name='password' placeholder='Password ' className='w-full rounded-lg p-4 border border-[#eaeff3]' />
-                    <input type="submit" value={loading ? "loading..." : 'Login'} className='bg-primary text-white rounded-lg w-full p-4 border border-[#eaeff3] cursor-pointer hover:bg-accent hover:opacity-90' />
+                    <div className='space-y-1'>
+                        <button type="submit" className='bg-primary text-white rounded-lg w-full p-4 border border-[#eaeff3] cursor-pointer hover:bg-accent hover:opacity-90' >{loading ? <span className="loading loading-bars loading-xm"></span> : 'Login'}</button>
+                        <p onClick={handleReset} className='text-end cursor-pointer w-full text-secondary font-bold hover:underline hover:text-primary'>Forget Password ?</p>
+                    </div>
                 </form>
                 <hr className='text-gray-300' />
                 <div>
                     <button type="submit" value='Login' className=' text-white rounded-lg w-full p-4 border  cursor-pointer hover:bg-red-400 hover:opacity-90 flex items-center justify-center gap-4 bg-red-400 text-lg' > <FaGoogle size={15} /><span>Google</span></button>
                 </div>
-                <h1 className='text-lg text-center text-secondary font-semibold'>Don't have account. <Link to='/auth/register' className='text-primary'>Register</Link></h1>
+                <h1 className='text-lg text-center text-secondary font-semibold'>Don't have account. <Link to='/auth/register' className='text-primary hover:underline'>Register</Link></h1>
             </div>
         </div>
     );

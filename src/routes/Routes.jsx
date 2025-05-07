@@ -6,6 +6,7 @@ import Error from "../pages/Error/Error";
 import Contact from "../pages/Contact/Contact";
 import Login from "../pages/Auth/Login";
 import Register from "../pages/Auth/Register";
+import Forget from "../pages/Auth/Forget";
 
 
 
@@ -30,12 +31,15 @@ export const router = createBrowserRouter([
             {
                 path:'auth/login',
                 Component: Login
-
             },
             {
                 path:'auth/register',
                 Component: Register
 
+            },
+            {
+                path:'/auth/forget',
+                Component: Forget
             },
             {
                 path: '/company/:id',
