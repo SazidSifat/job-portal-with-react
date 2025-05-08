@@ -15,7 +15,7 @@ const Error = () => {
                 <Link to="/" className='btn btn-primary'> Back to home</Link>
 
             </div>
-            <Footer/>
+            <Footer />
 
         </>
     );

@@ -4,11 +4,12 @@ import { HiMenuAlt3 } from "react-icons/hi";
 import { RxCross2 } from "react-icons/rx";
 import { TbLogin2 } from "react-icons/tb";
 import { AuthContext } from '../../context/AuthContext/AuthContext';
+import Loading from '../Loading/Loading';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false)
 
-    const { user, sign } = useContext(AuthContext)
+    const { loading, user, sign } = useContext(AuthContext)
 
 
     const handleToggle = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
 
     return (
         <div className='container mx-auto py-4  flex items-center justify-between px-2 md:px-0  relative'>
-            <div>
+            <div className='flex items-center justify-between '>
                 <Link to='/' className=' text-2xl md:text-3xl  font-bold'>JOB TRACK<span className='text-accent'>.</span></Link>
             </div>
 
@@ -42,11 +43,13 @@ const Navbar = () => {
                 <div className='flex gap-1 md:gap-4 items-center'>
                     <div className=' space-x-1 md:space-x-4'>
                         {
-                            user ? <div className='flex items-center gap-3'>
-                                <Link to='/profile'><img  src={user.photoURL} alt="" className='w-12 h-12 rounded-full  border-2 border-primary ' /></Link>
-                                <Link onClick={handlesignOut} to='/' className='btn btn-primary'>Logout</Link>
-                            </div> : <><Link to='/auth/login' className='btn '> Login <TbLogin2 size={20} /></Link>
-                                <Link to='/auth/register' className='btn btn-primary'>Register</Link></>
+                            loading ? <div className="p-3" ><span className="loading loading-ring  loading-md"></span></div> :
+                                user ? <div className='flex items-center gap-3'>
+                                    <Link to='/profile'><img src={user.photoURL} alt="" className='w-12 h-12 rounded-full  border-2 border-primary ' /></Link>
+                                    <Link onClick={handlesignOut} to='/' className='btn btn-primary'>Logout</Link>
+                                </div> : <><Link to='/auth/login' className='btn '> Login <TbLogin2 size={20} /></Link>
+                                    <Link to='/auth/register' className='btn btn-primary'>Register</Link></>
+
                         }
                     </div>
                     <div onClick={handleToggle} className='lg:hidden cursor-pointer'>
@@ -57,7 +60,8 @@ const Navbar = () => {
 
 
 
-            <div className={`absolute sm:hidden bg-[#061725] h-[1500px] w-[65%] ${toggle ? "top-0 left-0 duration-1000" : "top-0 -left-[500px] duration-1000"}`} >
+            <div className={`absolute sm:hidden bg-[#061725] h-[1500px] w-[65%] top-0 transition-all duration-500 ${toggle ? 'left-0' : '-left-[500px]'}`} >
+
 
                 <div className='place-items-end p-6 border-[#24333f] border-x-0 border-t-0 w-full  border-b-1 '>
                     <div className='  p-1 rounded-sm bg-[#24333f]  cursor-pointer' onClick={handleToggle} >
