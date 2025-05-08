@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../../component/Navbar/Navbar';
 import error from '../../assets/image/404.webp'
 import { Link } from 'react-router';
@@ -6,6 +6,9 @@ import Footer from '../../component/Footer/Footer';
 
 
 const Error = () => {
+      useEffect(() => {
+            document.title = "Page Not Found"
+        }, [])
     return (
         <>
             <Navbar />

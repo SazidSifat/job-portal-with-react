@@ -1,8 +1,13 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../../context/AuthContext/AuthContext';
 import { useNavigate } from 'react-router';
 
 const UpdateUser = () => {
+    useEffect(() => {
+        document.title = "Update Profile"
+    }, [])
+
+
     const [errMessage, setErrMessage] = useState(null)
     const { setLoading, loading, updateUser } = useContext(AuthContext)
     const navigate = useNavigate()

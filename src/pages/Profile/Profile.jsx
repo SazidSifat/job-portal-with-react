@@ -1,4 +1,4 @@
-import React, { useContext} from 'react';
+import React, { useContext, useEffect} from 'react';
 import { CiLocationOn } from 'react-icons/ci';
 import { FaEdit } from "react-icons/fa";
 import { AuthContext } from '../../context/AuthContext/AuthContext';
@@ -7,6 +7,10 @@ import { Link } from 'react-router';
 
 
 const Profile = () => {
+
+     useEffect(() => {
+                document.title = "User Profile"
+            }, [])
     const { user, } = useContext(AuthContext)
 
 

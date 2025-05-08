@@ -38,12 +38,6 @@ const Register = () => {
                 }
                 else if (!/(?=.*[A-Z])/.test(password)) {
                     setErrMessage("Must have 1 uppercase letter");
-                }
-                else if (!/(?=.*\d)/.test(password)) {
-                    setErrMessage("Must have 1 number");
-                }
-                else if (!/(?=.*[@#$%^&*!?.])/.test(password)) {
-                    setErrMessage("Must have 1 special character");
                 } else {
                     signUpWithEmailPass(email, password).then(() => {
                         updateUser({ displayName: name, photoURL: image }).then(() => {
