@@ -10,7 +10,7 @@ const Error = () => {
         <>
             <Navbar />
             <div className='flex flex-col gap-10 items-center justify-center h-[80vh]'>
-                <img src={error} alt="" />
+                <img src={error} alt="" className='w-[20%]' />
 
                 <Link to="/" className='btn btn-primary'> Back to home</Link>
 

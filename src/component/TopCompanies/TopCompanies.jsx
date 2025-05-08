@@ -1,6 +1,7 @@
 import React from 'react';
 import Company from '../Company/Company';
 import { useLoaderData } from 'react-router';
+    
 
 
 const TopCompanies = () => {

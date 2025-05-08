@@ -14,7 +14,6 @@ const Login = () => {
 
 
     const location = useLocation()
-    console.log(location);
     const [errMessage, setErrMessage] = useState(null)
     const navigate = useNavigate()
     const emailRef = useRef("")
@@ -32,7 +31,6 @@ const Login = () => {
                 location.state ? navigate(location.state) : navigate('/')
 
             }).catch((err) => {
-                console.log(err.code);
 
                 if (err.code === "auth/invalid-credential") {
                     setErrMessage("Invalid Credential");
@@ -47,7 +45,7 @@ const Login = () => {
 
     const handleReset = () => {
         const emailVal = emailRef.current.value
-        console.log(emailVal);
+
         navigate("/auth/forget", { state: emailVal })
     }
     const handleGoogle = () => {

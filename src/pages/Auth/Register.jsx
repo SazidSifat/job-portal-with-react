@@ -15,8 +15,6 @@ const Register = () => {
 
     location.state = "/auth/register"
 
-    console.log(location);
-
     const navigate = useNavigate()
     const provider = new GoogleAuthProvider();
     const { loading, setLoading, signUpWithEmailPass, signUpWithGoogle, updateUser } = useContext(AuthContext)
@@ -49,6 +47,7 @@ const Register = () => {
                 } else {
                     signUpWithEmailPass(email, password).then(() => {
                         updateUser({ displayName: name, photoURL: image }).then(() => {
+                            setLoading(false)
                             navigate('/')
                         })
                     }).catch((err) => {
