@@ -19,7 +19,6 @@ The goal of JobTrack is to simplify the job search process by providing a centra
 ---
 
 ## 🧩 Key Features
-
 -  **Private Routes** 
 -  **JSON-driven Data** 
 -  **Responsive Design** 
@@ -30,7 +29,6 @@ The goal of JobTrack is to simplify the job search process by providing a centra
 -  **Framer Motion Animations**
 -  **DaisyUI for UI Components**
 -  **Password Validation**
-
 
 ---
 
