@@ -20,8 +20,6 @@ The goal of JobTrack is to simplify the job search process by providing a centra
 
 ## 🧩 Key Features
 
--  **Authentication System** (Email/Password + Google Login)
--  **Forget Password** 
 -  **Private Routes** 
 -  **JSON-driven Data** 
 -  **Responsive Design** 
